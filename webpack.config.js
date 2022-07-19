@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-    entry: "./src/index.js", // The "entry-point" of the app
+    entry: "./src/index.js", // The "entry-point" for webpack to process
     mode: "development", // Working in dev mode (so that server later on will be in dev mode)
     module: {
         rules: [
@@ -23,8 +23,8 @@ module.exports = {
     resolve: { extensions: ["*", ".js", ".jsx"] },
     // where to save the output files to
     output: {
-        path: path.resolve(__dirname, "build/"),
-        publicPath: "/build/",
+        path: path.resolve(__dirname, "build/"), // ABSOLUTE path of output files on your local computer
+        publicPath: "/build/", // adds this path in front of all URLs encountered in the code (i.e where your webpack assets are stored)
         filename: "bundle.js"
     },
     devServer: {
