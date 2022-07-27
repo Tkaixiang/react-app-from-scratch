@@ -12,12 +12,6 @@ Babel converts ES6+ and JSX code into more traditional javascript. `preset-react
 
 - Most config information in `webpack.config.js`
 
-- <u>**Note**</u>: The current config only outputs the `bundle.js` that contains all the node_modules and other scripts bundled into it. 
-  
-  - We will need to manually place `index.js` somewhere where it can access `bundle.js`
-  
-  - Need to install a file handler if we want webpack to handle images etc. Link [here](https://webpack.js.org/loaders/file-loader/)
-
 
 
 
